@@ -13,8 +13,16 @@ void reverse(int arr[],int n)
 }
 int main()
 {
-    int arr[]={2,4,6,8,10,15,18};
-    int n = sizeof(arr)/sizeof(arr[0]);
+ 
+  int n;
+  printf("Enter array size: ");
+  scanf("%d", &n);
+  
+  int arr[n];
+  printf("Enter array elements: ");
+  for (int i = 0; i < n; i++) {
+      scanf("%d", &arr[i]);
+  }
    reverse(arr,n);
    for(int i=0;i<n;i++){
 printf("%d ",arr[i]);
